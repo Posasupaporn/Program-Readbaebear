@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{96E686AF-7EAD-48CB-9DFC-3AE9C2204A5A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>project1</RootNamespace>
+    <AssemblyName>project1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.4.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.15.4\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFeedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFeedback.Designer.cs">
+      <DependentUpon>FormFeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHome.Designer.cs">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formcoin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formcoin.Designer.cs">
+      <DependentUpon>Formcoin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenu.Designer.cs">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formpay1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formpay1.Designer.cs">
+      <DependentUpon>Formpay1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formpay2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formpay2.Designer.cs">
+      <DependentUpon>Formpay2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formpayy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formpayy.Designer.cs">
+      <DependentUpon>Formpayy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWriting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWriting.Designer.cs">
+      <DependentUpon>FormWriting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProfile.Designer.cs">
+      <DependentUpon>FormProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolder1\FormReading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewFolder1\FormReading.Designer.cs">
+      <DependentUpon>FormReading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formsignin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formsignin.Designer.cs">
+      <DependentUpon>Formsignin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMystory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMystory.Designer.cs">
+      <DependentUpon>FormMystory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFeedback.resx">
+      <DependentUpon>FormFeedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHome.resx">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formcoin.resx">
+      <DependentUpon>Formcoin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenu.resx">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formpay1.resx">
+      <DependentUpon>Formpay1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formpay2.resx">
+      <DependentUpon>Formpay2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formpayy.resx">
+      <DependentUpon>Formpayy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWriting.resx">
+      <DependentUpon>FormWriting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProfile.resx">
+      <DependentUpon>FormProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder1\FormReading.resx">
+      <DependentUpon>FormReading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formsignin.resx">
+      <DependentUpon>Formsignin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMystory.resx">
+      <DependentUpon>FormMystory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_8961.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_8962.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_8963.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_8970.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_89700.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_8983.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_8993.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_8997.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_8995.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_9002.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_9007.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_9004.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_90071.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_9005.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_90041.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_9006.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_9021 %281%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_9026.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_9025.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1656515573698.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_9034.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1656515589536.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1656515579118.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_9040.JPG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
